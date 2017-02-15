@@ -28,3 +28,4 @@ accounts-ui
 # Internal Packages
 watchful:core
 watchful:visitor
+watchful:patrimony

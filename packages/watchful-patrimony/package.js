@@ -5,7 +5,7 @@ Package.describe({
   // Version number.
   version: "0.0.1",
   // Optional.  Default is package directory name.
-  name: "watchful:visitor"
+  name: "watchful:patrimony"
 });
 /* This defines your actual package */
 Package.onUse(function (api) {
@@ -13,10 +13,9 @@ Package.onUse(function (api) {
   api.use('templating');
   api.use('watchful:core')
   // Templates
-  api.addFiles('lib/client/templates/visitors.html', ['client']);
+  api.addFiles('lib/client/templates/patrimony.html', ['client']);
 
   // Client Javascript
-  api.addFiles('lib/client/js/visitors.js', ['client']);
 });
 /* This defines the tests for the package */
 Package.onTest(function (api) {

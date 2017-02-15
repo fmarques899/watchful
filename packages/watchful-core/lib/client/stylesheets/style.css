@@ -54,6 +54,20 @@
     margin-right: -250px;
 }
 
+.watchful-sidebar-toggle-btn {
+  color: #d0bc4d;
+  background-color: #01070c;
+}
+
+.watchful-sidebar-toggle-btn:hover{
+  color: #01070c;
+  background-color: #0d1925;
+}
+
+.watchful-sidebar-toggle-btn:active{
+  color: #52480d;
+  background-color: #01070c;
+}
 /* Sidebar Styles */
 
 .sidebar-nav {
