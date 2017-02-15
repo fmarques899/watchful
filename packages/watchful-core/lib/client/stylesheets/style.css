@@ -6,6 +6,8 @@
 
  body {
     overflow-x: hidden;
+    background-color: #091017;
+    color: #d0bc4d;
  }
 
 /* Toggle Styles */
@@ -30,7 +32,7 @@
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #000;
+    background: #01070c;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -55,6 +57,7 @@
 /* Sidebar Styles */
 
 .sidebar-nav {
+    color: #FFFFFF;
     position: absolute;
     top: 0;
     width: 250px;
@@ -71,7 +74,7 @@
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #999999;
+    color: #FFF;
 }
 
 .sidebar-nav li a:hover {
