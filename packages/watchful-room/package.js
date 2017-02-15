@@ -1,27 +1,28 @@
 /* Information about this package */
 Package.describe({
   // Short two-sentence summary.
-  summary: "This package manages the visitors.",
+  summary: "This package manages the rooms data.",
   // Version number.
   version: "0.0.1",
   // Optional.  Default is package directory name.
-  name: "watchful:visitor"
+  name: "watchful:room"
 });
 /* This defines your actual package */
 Package.onUse(function (api) {
 
   api.use('templating');
+  api.use('watchful:core');
   api.use('mongo', ['client', 'server']);
-  api.use('watchful:core')
-  api.use('watchful:room')
   // Templates
-  api.addFiles('lib/client/templates/visitors.html', ['client']);
+  api.addFiles('', ['client']);
+
+  // Stylesheets
+  api.addFiles('', ['client']);
 
   // Client Javascript
-  api.addFiles('lib/client/js/visitors.js', ['client']);
+  api.addFiles('lib/client/js/rooms.js', ['client']);
 
-  // Server Javascript
-  api.addFiles('lib/server/visitors.js', ['server']);
+  api.addFiles('lib/server/rooms.js', ['server']);
 });
 /* This defines the tests for the package */
 Package.onTest(function (api) {
