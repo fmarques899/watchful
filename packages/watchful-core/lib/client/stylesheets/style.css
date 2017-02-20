@@ -129,18 +129,60 @@
     #sidebar-wrapper {
         width: 250px;
     }
-
-    #wrapper.toggled #sidebar-wrapper {
-        width: 0;
-    }
-
-    #page-content-wrapper {
-        padding: 20px;
-        position: relative;
-    }
+glyphiconlogo ge
 
     #wrapper.toggled #page-content-wrapper {
         position: relative;
         margin-right: 0;
+    }
+
+    #watchful-login-form{
+      width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .watchful-login-panel{
+      width: 1000px;
+      background-color: #172431;
+      padding: 1%;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 20px;
+      height: 100%;
+    }
+
+    .watchful-login-input{
+      background-color: #091017;
+      border-color: #000;
+      border-radius: 5px !important;
+      margin-bottom: 1px !important;
+    }
+
+    .login-logo{
+      width: 20%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 2%;
+    }
+
+    .watchful-login-button{
+      width: 100px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5px;
+      background-color: #091017;
+      border-color: #000000;
+      color: #d0bc4d;
+    }
+
+    .watchful-login-button:hover{
+      width: 100px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5px;
+      background-color: #d0bc4d;
+      border-color: #000000;
+      color: #091017;
+      transition: 2s;
     }
 }

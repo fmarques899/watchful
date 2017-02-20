@@ -29,7 +29,6 @@ Template.visitors.helpers({
     return Rooms.find();
   },
   getVisitors: function(){
-    console.log(Visitors.find({}).count());
     return Visitors.find({});
   }
 })

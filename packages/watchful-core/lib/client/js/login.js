@@ -3,15 +3,29 @@ Template.login.events({
     event.preventDefault();
     var username = $("#login-username").val()
     var password = $("#login-password").val()
-    Meteor.loginWithPassword(username, password);
-    FlowRouter.go('/')
+    if(username === ""){
+      alert("The Username field is empty.")
+    } else if(password===""){
+      alert("The Password field is empty")
+    } else {
+      Meteor.loginWithPassword(username, password);
+      FlowRouter.go('/')
+    }
+
+
 
   },
-  'submit #login-form': function(event){
+  'submit #watchful-login-form': function(event){
     event.preventDefault();
     var username = $("#login-username").val()
     var password = $("#login-password").val()
-    Meteor.loginWithPassword(username, password);
-    FlowRouter.go('/')
+    if(username === ""){
+      alert("The Username field is empty.")
+    } else if(password===""){
+      alert("The Password field is empty")
+    } else {
+      Meteor.loginWithPassword(username, password);
+      FlowRouter.go('/')
+    }
   }
 })
