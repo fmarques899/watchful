@@ -27,5 +27,6 @@ FlowRouter.route('/login', {
 FlowRouter.route('/patrimony', {
   action: function(){
     BlazeLayout.render("patrimony");
+
   }
 })

@@ -4,11 +4,15 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
- body {
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
     overflow-x: hidden;
     background-color: #091017;
     color: #d0bc4d;
- }
+}
 
 /* Toggle Styles */
 
@@ -19,11 +23,9 @@
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-
 #wrapper.toggled {
     padding-left: 250px;
 }
-
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
@@ -38,36 +40,20 @@
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-
 #wrapper.toggled #sidebar-wrapper {
     width: 250px;
 }
-
 #page-content-wrapper {
     width: 100%;
     position: absolute;
     padding: 15px;
-}
 
+}
 #wrapper.toggled #page-content-wrapper {
     position: absolute;
     margin-right: -250px;
 }
 
-.watchful-sidebar-toggle-btn {
-  color: #d0bc4d;
-  background-color: #01070c;
-}
-
-.watchful-sidebar-toggle-btn:hover{
-  color: #01070c;
-  background-color: #0d1925;
-}
-
-.watchful-sidebar-toggle-btn:active{
-  color: #52480d;
-  background-color: #01070c;
-}
 /* Sidebar Styles */
 
 .sidebar-nav {
@@ -79,110 +65,113 @@
     padding: 0;
     list-style: none;
 }
-
 .sidebar-nav li {
     text-indent: 20px;
     line-height: 40px;
 }
-
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
     color: #FFF;
 }
-
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: #fff;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
 }
-
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
     text-decoration: none;
 }
-
-.sidebar-nav > .sidebar-brand {
+.sidebar-nav> .sidebar-brand {
     height: 65px;
     font-size: 18px;
     line-height: 60px;
 }
-
-.sidebar-nav > .sidebar-brand a {
+.sidebar-nav> .sidebar-brand a {
     color: #999999;
 }
-
-.sidebar-nav > .sidebar-brand a:hover {
+.sidebar-nav> .sidebar-brand a:hover {
     color: #fff;
     background: none;
 }
-
 @media(min-width:768px) {
     #wrapper {
         padding-left: 250px;
     }
-
     #wrapper.toggled {
         padding-left: 0;
     }
-
     #sidebar-wrapper {
         width: 250px;
     }
-glyphiconlogo ge
-
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
     #wrapper.toggled #page-content-wrapper {
         position: relative;
         margin-right: 0;
     }
-
-    #watchful-login-form{
-      width: 200px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .watchful-login-panel{
-      width: 1000px;
-      background-color: #172431;
-      padding: 1%;
-      margin-left: auto;
-      margin-right: auto;
-      border-radius: 20px;
-      height: 100%;
-    }
-
-    .watchful-login-input{
-      background-color: #091017;
-      border-color: #000;
-      border-radius: 5px !important;
-      margin-bottom: 1px !important;
-    }
-
-    .login-logo{
-      width: 20%;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 2%;
-    }
-
-    .watchful-login-button{
-      width: 100px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 5px;
-      background-color: #091017;
-      border-color: #000000;
-      color: #d0bc4d;
-    }
-
-    .watchful-login-button:hover{
-      width: 100px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 5px;
-      background-color: #d0bc4d;
-      border-color: #000000;
-      color: #091017;
-      transition: 2s;
-    }
+}
+#watchful-login-form {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.watchful-sidebar-toggle-btn {
+    color: #d0bc4d;
+    background-color: #01070c;
+}
+.watchful-sidebar-toggle-btn:hover {
+    color: #01070c;
+    background-color: #0d1925;
+}
+.watchful-sidebar-toggle-btn:active {
+    color: #52480d;
+    background-color: #01070c;
+}
+.watchful-login-panel {
+    width: 1000px;
+    background-color: #172431;
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    height: 100%;
+    margin-top: 10%;
+}
+.watchful-login-input {
+    background-color: #091017;
+    border-color: #091017;
+    border-radius: 5px !important;
+    margin-bottom: 1px !important;
+    color: #d0bc4d;
+}
+.login-logo {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+}
+.watchful-login-button {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    background-color: #091017;
+    border-color: #000000;
+    color: #d0bc4d;
+}
+.watchful-login-button:hover {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    background-color: #d0bc4d;
+    border-color: #000000;
+    color: #091017;
+    transition: 2s;
 }
