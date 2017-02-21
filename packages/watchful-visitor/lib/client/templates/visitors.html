@@ -23,31 +23,42 @@
 
                             <div class="tab-content clearfix">
                                 <div class="tab-pane active" id="1a">
-                                  <h2>Visitors Register Form</h2>
-                                  <form class="">
-                                      <div id="visitor">
-                                          <input type="text" id="visitor_name" value="" placeholder="Name">
-                                          <input type="text" id="visitor_cpf" value="" placeholder="CPF">
-                                          <input type="text" id="visitor_rg" value="" placeholder="RG">
-                                          <input type="text" id="visitor_rg_emitter" value="" placeholder="Emitter">
-                                          <input type="text" id="visitor_birth_date" value="" placeholder="Birthdate">
-                                          <input type="button" id="register-visitor-button" value="Register">
-                                      </div>
-                                      <div id="visit">
-                                          <input type="text" id="visit_date" value="" placeholder="Date">
-                                          <select>
-                                              {{#each getRooms}}
-                                              <option value="X">{{number}}</option>
-                                              {{/each}}
-                                          </select>
-                                          <select>
-                                              {{#each getVisitors}}
-                                              <option value="{{name}}">{{name}}</option>
-                                              {{/each}}
-                                          </select>
-                                          <input type="text" id="visit_desc" value="" placeholder="Description">
-                                      </div>
-                                  </form>
+                                    <h2>Visitors Register Form</h2>
+                                    <form class="">
+                                        <h3>Visitor</h3>
+                                        <div id="visitor">
+                                            <label>Full Name</label>
+                                            <input type="text" id="visitor_name" class="watchful_form_input" value="" placeholder="Full Name" size="50">
+                                            <label>CPF</label>
+                                            <input type="text" id="visitor_cpf" class="watchful_form_input"  value="" placeholder="CPF">
+                                            <label>RG</label>
+                                            <input type="text" id="visitor_rg" class="watchful_form_input"  value="" placeholder="RG">
+                                            <br>
+                                            <label>Emitter</label>
+                                            <input type="text" id="visitor_rg_emitter" class="watchful_form_input"  value="" placeholder="Emitter">
+                                            <label>Birthdate</label>
+                                            <input type="date" id="visitor_birth_date"  class="watchful_form_input" value="" placeholder="Birthdate">
+                                        </div>
+                                        <h3>Visit Information</h3>
+                                        <div id="visit">
+                                            <label>Visit Date</label>
+                                            <input type="date" id="visit_date"  class="watchful_form_input" value="" placeholder="Visit Date">
+                                            <label>Room Number</label>
+                                            <select class="watchful_form_input" >
+                                                {{#each getRooms}}
+                                                <option value="X">{{number}}</option>
+                                                {{/each}}
+                                            </select>
+                                            <select class="watchful_form_input" >
+                                                {{#each getVisitors}}
+                                                <option value="{{name}}">{{name}}</option>
+                                                {{/each}}
+                                            </select>
+                                            <input type="text" id="visit_desc"  class="watchful_form_input" value="" placeholder="Description">
+                                        </div>
+                                        <br>
+                                        <input type="button" id="register-visitor-button" value="Register">
+                                    </form>
                                 </div>
                                 <div class="tab-pane" id="2a">
                                     <h3>We use the class nav-pills instead of nav-tabs which automatically creates a background color for the tab</h3>

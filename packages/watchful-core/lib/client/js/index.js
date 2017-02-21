@@ -7,3 +7,9 @@ Template.index.events({
       $("#wrapper").toggleClass("toggled");
   }
 })
+
+Template.index.helpers({
+  getCurrentUserName: function(){
+    return Meteor.user().username;
+  }
+})

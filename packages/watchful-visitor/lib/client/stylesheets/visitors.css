@@ -2,6 +2,7 @@
   color : white;
   background-color: #212c38;
   padding : 5px 15px;
+  width: auto !important;
 }
 
 #exTab2 h3 {
@@ -26,4 +27,20 @@
   color : white;
   background-color: #428bca;
   padding : 5px 15px;
+}
+
+#visitor{
+  border-color: #FFFFFF;
+  border: solid;
+  border-width: thin;
+}
+
+#visit{
+  border-color: #FFFFFF;
+  border: solid;
+  border-width: thin;
+}
+
+.watchful_form_input{
+  color: #01070c;
 }
